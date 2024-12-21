@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="FPU_project_qsim">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst22|bit1mux:inst93|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst23|bit1mux:inst999|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|bit24mux:inst11|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_u7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst22|bit1mux:inst94|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst23|bit1mux:inst93|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|bit24mux:inst12|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_u7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|bit24mux:inst16|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_u7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst22|bit1mux:inst95|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst23|bit1mux:inst94|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst23|bit1mux:inst98|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst22|bit1mux:inst96|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst22|bit1mux:inst999|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst23|bit1mux:inst95|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|bit8mux:inst21|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_g6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst22|bit1mux:inst97|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst22|bit1mux:inst|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst23|bit1mux:inst96|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|bit24mux:inst15|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_u7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst22|bit1mux:inst98|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst23|bit1mux:inst97|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Addition|variable_shifter:inst23|bit1mux:inst|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

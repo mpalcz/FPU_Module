@@ -1,0 +1,1476 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "07/22/2023 19:27:38"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Divider
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Divider_vlg_sample_tst(
+	clk,
+	D0,
+	D1,
+	D2,
+	D3,
+	D4,
+	D5,
+	D6,
+	D7,
+	D8,
+	D9,
+	D10,
+	D11,
+	D12,
+	D13,
+	D14,
+	D15,
+	D16,
+	D17,
+	D18,
+	D19,
+	D20,
+	D21,
+	D22,
+	D23,
+	R0,
+	R1,
+	R2,
+	R3,
+	R4,
+	R5,
+	R6,
+	R7,
+	R8,
+	R9,
+	R10,
+	R11,
+	R12,
+	R13,
+	R14,
+	R15,
+	R16,
+	R17,
+	R18,
+	R19,
+	R20,
+	R21,
+	R22,
+	R23,
+	Sel,
+	sampler_tx
+);
+input  clk;
+input  D0;
+input  D1;
+input  D2;
+input  D3;
+input  D4;
+input  D5;
+input  D6;
+input  D7;
+input  D8;
+input  D9;
+input  D10;
+input  D11;
+input  D12;
+input  D13;
+input  D14;
+input  D15;
+input  D16;
+input  D17;
+input  D18;
+input  D19;
+input  D20;
+input  D21;
+input  D22;
+input  D23;
+input  R0;
+input  R1;
+input  R2;
+input  R3;
+input  R4;
+input  R5;
+input  R6;
+input  R7;
+input  R8;
+input  R9;
+input  R10;
+input  R11;
+input  R12;
+input  R13;
+input  R14;
+input  R15;
+input  R16;
+input  R17;
+input  R18;
+input  R19;
+input  R20;
+input  R21;
+input  R22;
+input  R23;
+input  Sel;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or D0 or D1 or D2 or D3 or D4 or D5 or D6 or D7 or D8 or D9 or D10 or D11 or D12 or D13 or D14 or D15 or D16 or D17 or D18 or D19 or D20 or D21 or D22 or D23 or R0 or R1 or R2 or R3 or R4 or R5 or R6 or R7 or R8 or R9 or R10 or R11 or R12 or R13 or R14 or R15 or R16 or R17 or R18 or R19 or R20 or R21 or R22 or R23 or Sel)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Divider_vlg_check_tst (
+	overflow,
+	Q0,
+	Q1,
+	Q2,
+	Q3,
+	Q4,
+	Q5,
+	Q6,
+	Q7,
+	Q8,
+	Q9,
+	Q10,
+	Q11,
+	Q12,
+	Q13,
+	Q14,
+	Q15,
+	Q16,
+	Q17,
+	Q18,
+	Q19,
+	Q20,
+	Q21,
+	Q22,
+	Q23,
+	S47,
+	sampler_rx
+);
+input  overflow;
+input  Q0;
+input  Q1;
+input  Q2;
+input  Q3;
+input  Q4;
+input  Q5;
+input  Q6;
+input  Q7;
+input  Q8;
+input  Q9;
+input  Q10;
+input  Q11;
+input  Q12;
+input  Q13;
+input  Q14;
+input  Q15;
+input  Q16;
+input  Q17;
+input  Q18;
+input  Q19;
+input  Q20;
+input  Q21;
+input  Q22;
+input  Q23;
+input  S47;
+input sampler_rx;
+
+reg  overflow_expected;
+reg  Q0_expected;
+reg  Q1_expected;
+reg  Q2_expected;
+reg  Q3_expected;
+reg  Q4_expected;
+reg  Q5_expected;
+reg  Q6_expected;
+reg  Q7_expected;
+reg  Q8_expected;
+reg  Q9_expected;
+reg  Q10_expected;
+reg  Q11_expected;
+reg  Q12_expected;
+reg  Q13_expected;
+reg  Q14_expected;
+reg  Q15_expected;
+reg  Q16_expected;
+reg  Q17_expected;
+reg  Q18_expected;
+reg  Q19_expected;
+reg  Q20_expected;
+reg  Q21_expected;
+reg  Q22_expected;
+reg  Q23_expected;
+reg  S47_expected;
+
+reg  overflow_prev;
+reg  Q0_prev;
+reg  Q1_prev;
+reg  Q2_prev;
+reg  Q3_prev;
+reg  Q4_prev;
+reg  Q5_prev;
+reg  Q6_prev;
+reg  Q7_prev;
+reg  Q8_prev;
+reg  Q9_prev;
+reg  Q10_prev;
+reg  Q11_prev;
+reg  Q12_prev;
+reg  Q13_prev;
+reg  Q14_prev;
+reg  Q15_prev;
+reg  Q16_prev;
+reg  Q17_prev;
+reg  Q18_prev;
+reg  Q19_prev;
+reg  Q20_prev;
+reg  Q21_prev;
+reg  Q22_prev;
+reg  Q23_prev;
+reg  S47_prev;
+
+reg  overflow_expected_prev;
+reg  Q0_expected_prev;
+reg  Q1_expected_prev;
+reg  Q2_expected_prev;
+reg  Q3_expected_prev;
+reg  Q4_expected_prev;
+reg  Q5_expected_prev;
+reg  Q6_expected_prev;
+reg  Q7_expected_prev;
+reg  Q8_expected_prev;
+reg  Q9_expected_prev;
+reg  Q10_expected_prev;
+reg  Q11_expected_prev;
+reg  Q12_expected_prev;
+reg  Q13_expected_prev;
+reg  Q14_expected_prev;
+reg  Q15_expected_prev;
+reg  Q16_expected_prev;
+reg  Q17_expected_prev;
+reg  Q18_expected_prev;
+reg  Q19_expected_prev;
+reg  Q20_expected_prev;
+reg  Q21_expected_prev;
+reg  Q22_expected_prev;
+reg  Q23_expected_prev;
+reg  S47_expected_prev;
+
+reg  last_overflow_exp;
+reg  last_Q0_exp;
+reg  last_Q1_exp;
+reg  last_Q2_exp;
+reg  last_Q3_exp;
+reg  last_Q4_exp;
+reg  last_Q5_exp;
+reg  last_Q6_exp;
+reg  last_Q7_exp;
+reg  last_Q8_exp;
+reg  last_Q9_exp;
+reg  last_Q10_exp;
+reg  last_Q11_exp;
+reg  last_Q12_exp;
+reg  last_Q13_exp;
+reg  last_Q14_exp;
+reg  last_Q15_exp;
+reg  last_Q16_exp;
+reg  last_Q17_exp;
+reg  last_Q18_exp;
+reg  last_Q19_exp;
+reg  last_Q20_exp;
+reg  last_Q21_exp;
+reg  last_Q22_exp;
+reg  last_Q23_exp;
+reg  last_S47_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:26] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 26'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	overflow_prev = overflow;
+	Q0_prev = Q0;
+	Q1_prev = Q1;
+	Q2_prev = Q2;
+	Q3_prev = Q3;
+	Q4_prev = Q4;
+	Q5_prev = Q5;
+	Q6_prev = Q6;
+	Q7_prev = Q7;
+	Q8_prev = Q8;
+	Q9_prev = Q9;
+	Q10_prev = Q10;
+	Q11_prev = Q11;
+	Q12_prev = Q12;
+	Q13_prev = Q13;
+	Q14_prev = Q14;
+	Q15_prev = Q15;
+	Q16_prev = Q16;
+	Q17_prev = Q17;
+	Q18_prev = Q18;
+	Q19_prev = Q19;
+	Q20_prev = Q20;
+	Q21_prev = Q21;
+	Q22_prev = Q22;
+	Q23_prev = Q23;
+	S47_prev = S47;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	overflow_expected_prev = overflow_expected;
+	Q0_expected_prev = Q0_expected;
+	Q1_expected_prev = Q1_expected;
+	Q2_expected_prev = Q2_expected;
+	Q3_expected_prev = Q3_expected;
+	Q4_expected_prev = Q4_expected;
+	Q5_expected_prev = Q5_expected;
+	Q6_expected_prev = Q6_expected;
+	Q7_expected_prev = Q7_expected;
+	Q8_expected_prev = Q8_expected;
+	Q9_expected_prev = Q9_expected;
+	Q10_expected_prev = Q10_expected;
+	Q11_expected_prev = Q11_expected;
+	Q12_expected_prev = Q12_expected;
+	Q13_expected_prev = Q13_expected;
+	Q14_expected_prev = Q14_expected;
+	Q15_expected_prev = Q15_expected;
+	Q16_expected_prev = Q16_expected;
+	Q17_expected_prev = Q17_expected;
+	Q18_expected_prev = Q18_expected;
+	Q19_expected_prev = Q19_expected;
+	Q20_expected_prev = Q20_expected;
+	Q21_expected_prev = Q21_expected;
+	Q22_expected_prev = Q22_expected;
+	Q23_expected_prev = Q23_expected;
+	S47_expected_prev = S47_expected;
+end
+
+
+
+// expected Q23
+initial
+begin
+	Q23_expected = 1'bX;
+end 
+
+// expected Q22
+initial
+begin
+	Q22_expected = 1'bX;
+end 
+
+// expected Q21
+initial
+begin
+	Q21_expected = 1'bX;
+end 
+
+// expected Q20
+initial
+begin
+	Q20_expected = 1'bX;
+end 
+
+// expected Q19
+initial
+begin
+	Q19_expected = 1'bX;
+end 
+
+// expected Q18
+initial
+begin
+	Q18_expected = 1'bX;
+end 
+
+// expected Q17
+initial
+begin
+	Q17_expected = 1'bX;
+end 
+
+// expected Q16
+initial
+begin
+	Q16_expected = 1'bX;
+end 
+
+// expected Q15
+initial
+begin
+	Q15_expected = 1'bX;
+end 
+
+// expected Q14
+initial
+begin
+	Q14_expected = 1'bX;
+end 
+
+// expected Q13
+initial
+begin
+	Q13_expected = 1'bX;
+end 
+
+// expected Q12
+initial
+begin
+	Q12_expected = 1'bX;
+end 
+
+// expected Q11
+initial
+begin
+	Q11_expected = 1'bX;
+end 
+
+// expected Q10
+initial
+begin
+	Q10_expected = 1'bX;
+end 
+
+// expected Q9
+initial
+begin
+	Q9_expected = 1'bX;
+end 
+
+// expected Q8
+initial
+begin
+	Q8_expected = 1'bX;
+end 
+
+// expected Q7
+initial
+begin
+	Q7_expected = 1'bX;
+end 
+
+// expected Q6
+initial
+begin
+	Q6_expected = 1'bX;
+end 
+
+// expected Q5
+initial
+begin
+	Q5_expected = 1'bX;
+end 
+
+// expected Q4
+initial
+begin
+	Q4_expected = 1'bX;
+end 
+
+// expected Q3
+initial
+begin
+	Q3_expected = 1'bX;
+end 
+
+// expected Q2
+initial
+begin
+	Q2_expected = 1'bX;
+end 
+
+// expected Q1
+initial
+begin
+	Q1_expected = 1'bX;
+end 
+
+// expected Q0
+initial
+begin
+	Q0_expected = 1'bX;
+end 
+
+// expected S47
+initial
+begin
+	S47_expected = 1'bX;
+end 
+
+// expected overflow
+initial
+begin
+	overflow_expected = 1'bX;
+end 
+// generate trigger
+always @(overflow_expected or overflow or Q0_expected or Q0 or Q1_expected or Q1 or Q2_expected or Q2 or Q3_expected or Q3 or Q4_expected or Q4 or Q5_expected or Q5 or Q6_expected or Q6 or Q7_expected or Q7 or Q8_expected or Q8 or Q9_expected or Q9 or Q10_expected or Q10 or Q11_expected or Q11 or Q12_expected or Q12 or Q13_expected or Q13 or Q14_expected or Q14 or Q15_expected or Q15 or Q16_expected or Q16 or Q17_expected or Q17 or Q18_expected or Q18 or Q19_expected or Q19 or Q20_expected or Q20 or Q21_expected or Q21 or Q22_expected or Q22 or Q23_expected or Q23 or S47_expected or S47)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected overflow = %b | expected Q0 = %b | expected Q1 = %b | expected Q2 = %b | expected Q3 = %b | expected Q4 = %b | expected Q5 = %b | expected Q6 = %b | expected Q7 = %b | expected Q8 = %b | expected Q9 = %b | expected Q10 = %b | expected Q11 = %b | expected Q12 = %b | expected Q13 = %b | expected Q14 = %b | expected Q15 = %b | expected Q16 = %b | expected Q17 = %b | expected Q18 = %b | expected Q19 = %b | expected Q20 = %b | expected Q21 = %b | expected Q22 = %b | expected Q23 = %b | expected S47 = %b | ",overflow_expected_prev,Q0_expected_prev,Q1_expected_prev,Q2_expected_prev,Q3_expected_prev,Q4_expected_prev,Q5_expected_prev,Q6_expected_prev,Q7_expected_prev,Q8_expected_prev,Q9_expected_prev,Q10_expected_prev,Q11_expected_prev,Q12_expected_prev,Q13_expected_prev,Q14_expected_prev,Q15_expected_prev,Q16_expected_prev,Q17_expected_prev,Q18_expected_prev,Q19_expected_prev,Q20_expected_prev,Q21_expected_prev,Q22_expected_prev,Q23_expected_prev,S47_expected_prev);
+	$display("| real overflow = %b | real Q0 = %b | real Q1 = %b | real Q2 = %b | real Q3 = %b | real Q4 = %b | real Q5 = %b | real Q6 = %b | real Q7 = %b | real Q8 = %b | real Q9 = %b | real Q10 = %b | real Q11 = %b | real Q12 = %b | real Q13 = %b | real Q14 = %b | real Q15 = %b | real Q16 = %b | real Q17 = %b | real Q18 = %b | real Q19 = %b | real Q20 = %b | real Q21 = %b | real Q22 = %b | real Q23 = %b | real S47 = %b | ",overflow_prev,Q0_prev,Q1_prev,Q2_prev,Q3_prev,Q4_prev,Q5_prev,Q6_prev,Q7_prev,Q8_prev,Q9_prev,Q10_prev,Q11_prev,Q12_prev,Q13_prev,Q14_prev,Q15_prev,Q16_prev,Q17_prev,Q18_prev,Q19_prev,Q20_prev,Q21_prev,Q22_prev,Q23_prev,S47_prev);
+`endif
+	if (
+		( overflow_expected_prev !== 1'bx ) && ( overflow_prev !== overflow_expected_prev )
+		&& ((overflow_expected_prev !== last_overflow_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port overflow :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", overflow_expected_prev);
+		$display ("     Real value = %b", overflow_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_overflow_exp = overflow_expected_prev;
+	end
+	if (
+		( Q0_expected_prev !== 1'bx ) && ( Q0_prev !== Q0_expected_prev )
+		&& ((Q0_expected_prev !== last_Q0_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q0_expected_prev);
+		$display ("     Real value = %b", Q0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Q0_exp = Q0_expected_prev;
+	end
+	if (
+		( Q1_expected_prev !== 1'bx ) && ( Q1_prev !== Q1_expected_prev )
+		&& ((Q1_expected_prev !== last_Q1_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q1_expected_prev);
+		$display ("     Real value = %b", Q1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_Q1_exp = Q1_expected_prev;
+	end
+	if (
+		( Q2_expected_prev !== 1'bx ) && ( Q2_prev !== Q2_expected_prev )
+		&& ((Q2_expected_prev !== last_Q2_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q2_expected_prev);
+		$display ("     Real value = %b", Q2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_Q2_exp = Q2_expected_prev;
+	end
+	if (
+		( Q3_expected_prev !== 1'bx ) && ( Q3_prev !== Q3_expected_prev )
+		&& ((Q3_expected_prev !== last_Q3_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q3_expected_prev);
+		$display ("     Real value = %b", Q3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_Q3_exp = Q3_expected_prev;
+	end
+	if (
+		( Q4_expected_prev !== 1'bx ) && ( Q4_prev !== Q4_expected_prev )
+		&& ((Q4_expected_prev !== last_Q4_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q4_expected_prev);
+		$display ("     Real value = %b", Q4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_Q4_exp = Q4_expected_prev;
+	end
+	if (
+		( Q5_expected_prev !== 1'bx ) && ( Q5_prev !== Q5_expected_prev )
+		&& ((Q5_expected_prev !== last_Q5_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q5 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q5_expected_prev);
+		$display ("     Real value = %b", Q5_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_Q5_exp = Q5_expected_prev;
+	end
+	if (
+		( Q6_expected_prev !== 1'bx ) && ( Q6_prev !== Q6_expected_prev )
+		&& ((Q6_expected_prev !== last_Q6_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q6 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q6_expected_prev);
+		$display ("     Real value = %b", Q6_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_Q6_exp = Q6_expected_prev;
+	end
+	if (
+		( Q7_expected_prev !== 1'bx ) && ( Q7_prev !== Q7_expected_prev )
+		&& ((Q7_expected_prev !== last_Q7_exp) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q7 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q7_expected_prev);
+		$display ("     Real value = %b", Q7_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_Q7_exp = Q7_expected_prev;
+	end
+	if (
+		( Q8_expected_prev !== 1'bx ) && ( Q8_prev !== Q8_expected_prev )
+		&& ((Q8_expected_prev !== last_Q8_exp) ||
+			on_first_change[10])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q8 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q8_expected_prev);
+		$display ("     Real value = %b", Q8_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[10] = 1'b0;
+		last_Q8_exp = Q8_expected_prev;
+	end
+	if (
+		( Q9_expected_prev !== 1'bx ) && ( Q9_prev !== Q9_expected_prev )
+		&& ((Q9_expected_prev !== last_Q9_exp) ||
+			on_first_change[11])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q9 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q9_expected_prev);
+		$display ("     Real value = %b", Q9_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[11] = 1'b0;
+		last_Q9_exp = Q9_expected_prev;
+	end
+	if (
+		( Q10_expected_prev !== 1'bx ) && ( Q10_prev !== Q10_expected_prev )
+		&& ((Q10_expected_prev !== last_Q10_exp) ||
+			on_first_change[12])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q10 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q10_expected_prev);
+		$display ("     Real value = %b", Q10_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[12] = 1'b0;
+		last_Q10_exp = Q10_expected_prev;
+	end
+	if (
+		( Q11_expected_prev !== 1'bx ) && ( Q11_prev !== Q11_expected_prev )
+		&& ((Q11_expected_prev !== last_Q11_exp) ||
+			on_first_change[13])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q11 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q11_expected_prev);
+		$display ("     Real value = %b", Q11_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[13] = 1'b0;
+		last_Q11_exp = Q11_expected_prev;
+	end
+	if (
+		( Q12_expected_prev !== 1'bx ) && ( Q12_prev !== Q12_expected_prev )
+		&& ((Q12_expected_prev !== last_Q12_exp) ||
+			on_first_change[14])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q12 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q12_expected_prev);
+		$display ("     Real value = %b", Q12_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[14] = 1'b0;
+		last_Q12_exp = Q12_expected_prev;
+	end
+	if (
+		( Q13_expected_prev !== 1'bx ) && ( Q13_prev !== Q13_expected_prev )
+		&& ((Q13_expected_prev !== last_Q13_exp) ||
+			on_first_change[15])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q13 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q13_expected_prev);
+		$display ("     Real value = %b", Q13_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[15] = 1'b0;
+		last_Q13_exp = Q13_expected_prev;
+	end
+	if (
+		( Q14_expected_prev !== 1'bx ) && ( Q14_prev !== Q14_expected_prev )
+		&& ((Q14_expected_prev !== last_Q14_exp) ||
+			on_first_change[16])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q14 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q14_expected_prev);
+		$display ("     Real value = %b", Q14_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[16] = 1'b0;
+		last_Q14_exp = Q14_expected_prev;
+	end
+	if (
+		( Q15_expected_prev !== 1'bx ) && ( Q15_prev !== Q15_expected_prev )
+		&& ((Q15_expected_prev !== last_Q15_exp) ||
+			on_first_change[17])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q15 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q15_expected_prev);
+		$display ("     Real value = %b", Q15_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[17] = 1'b0;
+		last_Q15_exp = Q15_expected_prev;
+	end
+	if (
+		( Q16_expected_prev !== 1'bx ) && ( Q16_prev !== Q16_expected_prev )
+		&& ((Q16_expected_prev !== last_Q16_exp) ||
+			on_first_change[18])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q16 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q16_expected_prev);
+		$display ("     Real value = %b", Q16_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[18] = 1'b0;
+		last_Q16_exp = Q16_expected_prev;
+	end
+	if (
+		( Q17_expected_prev !== 1'bx ) && ( Q17_prev !== Q17_expected_prev )
+		&& ((Q17_expected_prev !== last_Q17_exp) ||
+			on_first_change[19])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q17 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q17_expected_prev);
+		$display ("     Real value = %b", Q17_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[19] = 1'b0;
+		last_Q17_exp = Q17_expected_prev;
+	end
+	if (
+		( Q18_expected_prev !== 1'bx ) && ( Q18_prev !== Q18_expected_prev )
+		&& ((Q18_expected_prev !== last_Q18_exp) ||
+			on_first_change[20])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q18 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q18_expected_prev);
+		$display ("     Real value = %b", Q18_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[20] = 1'b0;
+		last_Q18_exp = Q18_expected_prev;
+	end
+	if (
+		( Q19_expected_prev !== 1'bx ) && ( Q19_prev !== Q19_expected_prev )
+		&& ((Q19_expected_prev !== last_Q19_exp) ||
+			on_first_change[21])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q19 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q19_expected_prev);
+		$display ("     Real value = %b", Q19_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[21] = 1'b0;
+		last_Q19_exp = Q19_expected_prev;
+	end
+	if (
+		( Q20_expected_prev !== 1'bx ) && ( Q20_prev !== Q20_expected_prev )
+		&& ((Q20_expected_prev !== last_Q20_exp) ||
+			on_first_change[22])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q20 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q20_expected_prev);
+		$display ("     Real value = %b", Q20_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[22] = 1'b0;
+		last_Q20_exp = Q20_expected_prev;
+	end
+	if (
+		( Q21_expected_prev !== 1'bx ) && ( Q21_prev !== Q21_expected_prev )
+		&& ((Q21_expected_prev !== last_Q21_exp) ||
+			on_first_change[23])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q21 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q21_expected_prev);
+		$display ("     Real value = %b", Q21_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[23] = 1'b0;
+		last_Q21_exp = Q21_expected_prev;
+	end
+	if (
+		( Q22_expected_prev !== 1'bx ) && ( Q22_prev !== Q22_expected_prev )
+		&& ((Q22_expected_prev !== last_Q22_exp) ||
+			on_first_change[24])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q22 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q22_expected_prev);
+		$display ("     Real value = %b", Q22_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[24] = 1'b0;
+		last_Q22_exp = Q22_expected_prev;
+	end
+	if (
+		( Q23_expected_prev !== 1'bx ) && ( Q23_prev !== Q23_expected_prev )
+		&& ((Q23_expected_prev !== last_Q23_exp) ||
+			on_first_change[25])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Q23 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Q23_expected_prev);
+		$display ("     Real value = %b", Q23_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[25] = 1'b0;
+		last_Q23_exp = Q23_expected_prev;
+	end
+	if (
+		( S47_expected_prev !== 1'bx ) && ( S47_prev !== S47_expected_prev )
+		&& ((S47_expected_prev !== last_S47_exp) ||
+			on_first_change[26])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port S47 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", S47_expected_prev);
+		$display ("     Real value = %b", S47_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[26] = 1'b0;
+		last_S47_exp = S47_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#5000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$stop;
+end 
+endmodule
+
+module Divider_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg D0;
+reg D1;
+reg D2;
+reg D3;
+reg D4;
+reg D5;
+reg D6;
+reg D7;
+reg D8;
+reg D9;
+reg D10;
+reg D11;
+reg D12;
+reg D13;
+reg D14;
+reg D15;
+reg D16;
+reg D17;
+reg D18;
+reg D19;
+reg D20;
+reg D21;
+reg D22;
+reg D23;
+reg R0;
+reg R1;
+reg R2;
+reg R3;
+reg R4;
+reg R5;
+reg R6;
+reg R7;
+reg R8;
+reg R9;
+reg R10;
+reg R11;
+reg R12;
+reg R13;
+reg R14;
+reg R15;
+reg R16;
+reg R17;
+reg R18;
+reg R19;
+reg R20;
+reg R21;
+reg R22;
+reg R23;
+reg Sel;
+// wires                                               
+wire overflow;
+wire Q0;
+wire Q1;
+wire Q2;
+wire Q3;
+wire Q4;
+wire Q5;
+wire Q6;
+wire Q7;
+wire Q8;
+wire Q9;
+wire Q10;
+wire Q11;
+wire Q12;
+wire Q13;
+wire Q14;
+wire Q15;
+wire Q16;
+wire Q17;
+wire Q18;
+wire Q19;
+wire Q20;
+wire Q21;
+wire Q22;
+wire Q23;
+wire S47;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Divider i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.D0(D0),
+	.D1(D1),
+	.D2(D2),
+	.D3(D3),
+	.D4(D4),
+	.D5(D5),
+	.D6(D6),
+	.D7(D7),
+	.D8(D8),
+	.D9(D9),
+	.D10(D10),
+	.D11(D11),
+	.D12(D12),
+	.D13(D13),
+	.D14(D14),
+	.D15(D15),
+	.D16(D16),
+	.D17(D17),
+	.D18(D18),
+	.D19(D19),
+	.D20(D20),
+	.D21(D21),
+	.D22(D22),
+	.D23(D23),
+	.overflow(overflow),
+	.Q0(Q0),
+	.Q1(Q1),
+	.Q2(Q2),
+	.Q3(Q3),
+	.Q4(Q4),
+	.Q5(Q5),
+	.Q6(Q6),
+	.Q7(Q7),
+	.Q8(Q8),
+	.Q9(Q9),
+	.Q10(Q10),
+	.Q11(Q11),
+	.Q12(Q12),
+	.Q13(Q13),
+	.Q14(Q14),
+	.Q15(Q15),
+	.Q16(Q16),
+	.Q17(Q17),
+	.Q18(Q18),
+	.Q19(Q19),
+	.Q20(Q20),
+	.Q21(Q21),
+	.Q22(Q22),
+	.Q23(Q23),
+	.R0(R0),
+	.R1(R1),
+	.R2(R2),
+	.R3(R3),
+	.R4(R4),
+	.R5(R5),
+	.R6(R6),
+	.R7(R7),
+	.R8(R8),
+	.R9(R9),
+	.R10(R10),
+	.R11(R11),
+	.R12(R12),
+	.R13(R13),
+	.R14(R14),
+	.R15(R15),
+	.R16(R16),
+	.R17(R17),
+	.R18(R18),
+	.R19(R19),
+	.R20(R20),
+	.R21(R21),
+	.R22(R22),
+	.R23(R23),
+	.S47(S47),
+	.Sel(Sel)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #50000 1'b1;
+	#50000;
+end 
+
+// Sel
+initial
+begin
+	Sel = 1'b1;
+	Sel = #160000 1'b0;
+end 
+
+// D23
+initial
+begin
+	D23 = 1'b0;
+end 
+
+// D22
+initial
+begin
+	D22 = 1'b0;
+end 
+
+// D21
+initial
+begin
+	D21 = 1'b0;
+end 
+
+// D20
+initial
+begin
+	D20 = 1'b0;
+end 
+
+// D19
+initial
+begin
+	D19 = 1'b0;
+end 
+
+// D18
+initial
+begin
+	D18 = 1'b0;
+end 
+
+// D17
+initial
+begin
+	D17 = 1'b0;
+end 
+
+// D16
+initial
+begin
+	D16 = 1'b0;
+end 
+
+// D15
+initial
+begin
+	D15 = 1'b0;
+end 
+
+// D14
+initial
+begin
+	D14 = 1'b0;
+end 
+
+// D13
+initial
+begin
+	D13 = 1'b0;
+end 
+
+// D12
+initial
+begin
+	D12 = 1'b0;
+end 
+
+// D11
+initial
+begin
+	D11 = 1'b0;
+end 
+
+// D10
+initial
+begin
+	D10 = 1'b0;
+end 
+
+// D9
+initial
+begin
+	D9 = 1'b0;
+end 
+
+// D8
+initial
+begin
+	D8 = 1'b0;
+end 
+
+// D7
+initial
+begin
+	D7 = 1'b0;
+end 
+
+// D6
+initial
+begin
+	D6 = 1'b0;
+end 
+
+// D5
+initial
+begin
+	D5 = 1'b0;
+end 
+
+// D4
+initial
+begin
+	D4 = 1'b0;
+end 
+
+// D3
+initial
+begin
+	D3 = 1'b0;
+end 
+
+// D2
+initial
+begin
+	D2 = 1'b0;
+end 
+
+// D1
+initial
+begin
+	D1 = 1'b1;
+end 
+
+// D0
+initial
+begin
+	D0 = 1'b1;
+end 
+
+// R23
+initial
+begin
+	R23 = 1'b0;
+end 
+
+// R22
+initial
+begin
+	R22 = 1'b0;
+end 
+
+// R21
+initial
+begin
+	R21 = 1'b0;
+end 
+
+// R20
+initial
+begin
+	R20 = 1'b0;
+end 
+
+// R19
+initial
+begin
+	R19 = 1'b0;
+end 
+
+// R18
+initial
+begin
+	R18 = 1'b0;
+end 
+
+// R17
+initial
+begin
+	R17 = 1'b0;
+end 
+
+// R16
+initial
+begin
+	R16 = 1'b0;
+end 
+
+// R15
+initial
+begin
+	R15 = 1'b0;
+end 
+
+// R14
+initial
+begin
+	R14 = 1'b0;
+end 
+
+// R13
+initial
+begin
+	R13 = 1'b0;
+end 
+
+// R12
+initial
+begin
+	R12 = 1'b0;
+end 
+
+// R11
+initial
+begin
+	R11 = 1'b0;
+end 
+
+// R10
+initial
+begin
+	R10 = 1'b0;
+end 
+
+// R9
+initial
+begin
+	R9 = 1'b0;
+end 
+
+// R8
+initial
+begin
+	R8 = 1'b0;
+end 
+
+// R7
+initial
+begin
+	R7 = 1'b0;
+end 
+
+// R6
+initial
+begin
+	R6 = 1'b0;
+end 
+
+// R5
+initial
+begin
+	R5 = 1'b0;
+end 
+
+// R4
+initial
+begin
+	R4 = 1'b0;
+end 
+
+// R3
+initial
+begin
+	R3 = 1'b1;
+end 
+
+// R2
+initial
+begin
+	R2 = 1'b1;
+end 
+
+// R1
+initial
+begin
+	R1 = 1'b0;
+end 
+
+// R0
+initial
+begin
+	R0 = 1'b0;
+end 
+
+Divider_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.D0(D0),
+	.D1(D1),
+	.D2(D2),
+	.D3(D3),
+	.D4(D4),
+	.D5(D5),
+	.D6(D6),
+	.D7(D7),
+	.D8(D8),
+	.D9(D9),
+	.D10(D10),
+	.D11(D11),
+	.D12(D12),
+	.D13(D13),
+	.D14(D14),
+	.D15(D15),
+	.D16(D16),
+	.D17(D17),
+	.D18(D18),
+	.D19(D19),
+	.D20(D20),
+	.D21(D21),
+	.D22(D22),
+	.D23(D23),
+	.R0(R0),
+	.R1(R1),
+	.R2(R2),
+	.R3(R3),
+	.R4(R4),
+	.R5(R5),
+	.R6(R6),
+	.R7(R7),
+	.R8(R8),
+	.R9(R9),
+	.R10(R10),
+	.R11(R11),
+	.R12(R12),
+	.R13(R13),
+	.R14(R14),
+	.R15(R15),
+	.R16(R16),
+	.R17(R17),
+	.R18(R18),
+	.R19(R19),
+	.R20(R20),
+	.R21(R21),
+	.R22(R22),
+	.R23(R23),
+	.Sel(Sel),
+	.sampler_tx(sampler)
+);
+
+Divider_vlg_check_tst tb_out(
+	.overflow(overflow),
+	.Q0(Q0),
+	.Q1(Q1),
+	.Q2(Q2),
+	.Q3(Q3),
+	.Q4(Q4),
+	.Q5(Q5),
+	.Q6(Q6),
+	.Q7(Q7),
+	.Q8(Q8),
+	.Q9(Q9),
+	.Q10(Q10),
+	.Q11(Q11),
+	.Q12(Q12),
+	.Q13(Q13),
+	.Q14(Q14),
+	.Q15(Q15),
+	.Q16(Q16),
+	.Q17(Q17),
+	.Q18(Q18),
+	.Q19(Q19),
+	.Q20(Q20),
+	.Q21(Q21),
+	.Q22(Q22),
+	.Q23(Q23),
+	.S47(S47),
+	.sampler_rx(sampler)
+);
+endmodule
+

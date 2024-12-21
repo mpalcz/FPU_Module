@@ -1,0 +1,113 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 13:50:29  July 21, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		FPU_project_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY Division
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:50:29  JULY 21, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name SOURCE_FILE bit48mux.cmp
+set_global_assignment -name BSF_FILE variable_shifter.bsf
+set_global_assignment -name BDF_FILE variable_shifter.bdf
+set_global_assignment -name BDF_FILE Addition.bdf
+set_global_assignment -name BSF_FILE 24_bit_twos_complementer.bsf
+set_global_assignment -name BDF_FILE 24_bit_twos_complementer.bdf
+set_global_assignment -name BSF_FILE 24_bit_par_in_ser_par_out_reg.bsf
+set_global_assignment -name BDF_FILE 24_bit_par_in_ser_par_out_reg.bdf
+set_global_assignment -name BDF_FILE Multiplication.bdf
+set_global_assignment -name BSF_FILE twos_complementer.bsf
+set_global_assignment -name BDF_FILE twos_complementer.bdf
+set_global_assignment -name BSF_FILE Multiplier.bsf
+set_global_assignment -name BDF_FILE Multiplier.bdf
+set_global_assignment -name BSF_FILE bit48mux.bsf
+set_global_assignment -name BSF_FILE bit24mux.bsf
+set_global_assignment -name BSF_FILE bit8mux.bsf
+set_global_assignment -name BSF_FILE bit1mux.bsf
+set_global_assignment -name BSF_FILE 48_bit_parallel_reg.bsf
+set_global_assignment -name BDF_FILE 48_bit_parallel_reg.bdf
+set_global_assignment -name BSF_FILE 48_bit_par_in_ser_par_out_reg.bsf
+set_global_assignment -name BDF_FILE 48_bit_par_in_ser_par_out_reg.bdf
+set_global_assignment -name BSF_FILE 48_bit_add_sub.bsf
+set_global_assignment -name BDF_FILE 48_bit_add_sub.bdf
+set_global_assignment -name BSF_FILE 24_bit_parallel_reg.bsf
+set_global_assignment -name BDF_FILE 24_bit_parallel_reg.bdf
+set_global_assignment -name BSF_FILE 24_bit_par_in_ser_out_reg.bsf
+set_global_assignment -name BDF_FILE 24_bit_par_in_ser_out_reg.bdf
+set_global_assignment -name BSF_FILE 1to4_demux.bsf
+set_global_assignment -name BDF_FILE 1to4_demux.bdf
+set_global_assignment -name BDF_FILE Normalizer.bdf
+set_global_assignment -name BDF_FILE 46_bit_par_in_ser_out_reg.bdf
+set_global_assignment -name BDF_FILE 24_bit_add_sub.bdf
+set_global_assignment -name BDF_FILE 23_counter.bdf
+set_global_assignment -name BDF_FILE 23_bit_shift_reg.bdf
+set_global_assignment -name BDF_FILE 8_bit_parallel_reg.bdf
+set_global_assignment -name BDF_FILE 8_bit_add_sub_ha.bdf
+set_global_assignment -name BDF_FILE 8_bit_add_sub.bdf
+set_global_assignment -name BDF_FILE 2_1_mux.bdf
+set_global_assignment -name BDF_FILE 1_bit_ha.bdf
+set_global_assignment -name BDF_FILE 1_bit_fa.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE counter_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE normalizer_test.vwf
+set_global_assignment -name BDF_FILE Divider.bdf
+set_global_assignment -name QIP_FILE bit48mux.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE multiplier_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE divder_test.vwf
+set_global_assignment -name QIP_FILE bit24mux.qip
+set_global_assignment -name QIP_FILE bit8mux.qip
+set_global_assignment -name QIP_FILE bit1mux.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE addition_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Multiplication.vwf
+set_global_assignment -name BDF_FILE Division.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Division.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "H:/hsand052/FPU_project/normalizer_test.vwf"
+set_global_assignment -name BDF_FILE Subtraction.bdf
+set_global_assignment -name BDF_FILE 48_bit_par_in_ser_par_out_reg_r.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
